@@ -1,0 +1,32 @@
+:root{
+  --lg-space-1:4px;
+  --lg-space-2:6px;
+  --lg-space-3:10px;
+  --lg-space-4:14px;
+  --lg-space-5:16px;
+  --lg-space-6:20px;
+  --lg-space-7:24px;
+  --lg-space-8:28px;
+  --lg-space-9:32px;
+  --lg-space-10:40px;
+  --lg-space-12:48px;
+  --lg-space-14:56px;
+  --lg-space-16:70px;
+  --lg-space-20:84px;
+
+  --lg-container:1180px;
+  --lg-container-wp:1200px;
+  --lg-container-narrow:750px;
+  --lg-gutter:24px;
+
+  --lg-section-y:84px;
+  --lg-section-y-tight:56px;
+  --lg-section-y-wp:70px;
+  --lg-grid-gap:28px;
+  --lg-feature-gap:56px;
+
+  --lg-btn-pad:14px 30px;
+  --lg-btn-pad-sm:10px 20px;
+  --lg-btn-pad-wp:17px 40px;
+  --lg-card-pad:32px 26px;
+}

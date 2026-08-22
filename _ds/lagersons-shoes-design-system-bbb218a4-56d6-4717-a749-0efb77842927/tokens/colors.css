@@ -1,0 +1,56 @@
+:root{
+  /* --- Brand pinks. Values 500/600 are the live site's Astra global colors 0/1;
+         700 is sampled from the supplied logo lockup; 800 is the deep pink used
+         for headings in the static rebuild. --- */
+  --lg-pink-50:#FFF6FA;
+  --lg-pink-100:#FCEEF5;
+  --lg-pink-200:#FAD8E9;
+  --lg-pink-300:#F6C9DD;
+  --lg-pink-400:#FFE1EE;
+  --lg-pink-500:#FB5FAB;
+  --lg-pink-600:#EA559D;
+  --lg-pink-650:#EC1E79;
+  --lg-pink-700:#D30071;
+  --lg-pink-800:#C2185B;
+
+  /* --- Ink / neutrals --- */
+  --lg-ink-900:#0F172A;
+  --lg-ink-700:#2C2530;
+  --lg-ink-600:#454F5E;
+  --lg-ink-500:#6B6470;
+  --lg-ink-black:#140610;
+  --lg-gray-900:#222222;
+  --lg-gray-500:#DDDDDD;
+  --lg-white:#FFFFFF;
+
+  /* --- Accents --- */
+  --lg-gold:#B8935A;
+  --lg-olive-label:rgba(83,105,65,0.70);
+  --lg-whatsapp:#25D366;
+
+  /* --- Dark footer scale --- */
+  --lg-footer-bg:#201A22;
+  --lg-footer-fg:#CFC4D1;
+  --lg-footer-muted:#9D92A0;
+  --lg-footer-dim:#8A7F8D;
+
+  /* --- Semantic aliases --- */
+  --lg-brand:var(--lg-pink-700);
+  --lg-brand-action:var(--lg-pink-500);
+  --lg-brand-action-hover:var(--lg-pink-600);
+  --lg-text-heading:var(--lg-pink-800);
+  --lg-text-body:var(--lg-ink-500);
+  --lg-text-strong:var(--lg-ink-700);
+  --lg-text-onbrand:var(--lg-white);
+  --lg-text-label:var(--lg-gold);
+  --lg-surface:var(--lg-white);
+  --lg-surface-soft:var(--lg-pink-50);
+  --lg-surface-tint:var(--lg-pink-100);
+  --lg-surface-card:var(--lg-white);
+  --lg-border:var(--lg-pink-300);
+  --lg-border-strong:var(--lg-pink-800);
+  --lg-hero-wash:radial-gradient(circle at 80% 0%, var(--lg-pink-400) 0%, var(--lg-pink-50) 55%, #ffffff 100%);
+  --lg-brand-gradient:linear-gradient(135deg, var(--lg-pink-650), var(--lg-pink-800));
+  --lg-link:var(--lg-pink-650);
+  --lg-link-hover:var(--lg-pink-800);
+}
