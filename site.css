@@ -166,3 +166,49 @@ h5{font-size:22px!important;line-height:1.35em!important}
 .grid4,.grid3{gap:18px}
 .tcard .m,.gcard .m{padding:14px 16px 18px}
 }
+
+/* =========================================
+   SOLID PINK HEADER — NEVER TRANSPARENT
+   ========================================= */
+
+.hdr,
+.hdr-in {
+    background: #d50068 !important;
+    background-color: #d50068 !important;
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Keep it solid pink while scrolling */
+.hdr.scrolled,
+.hdr.is-scrolled,
+.hdr.sticky,
+.hdr.fixed {
+    background: #d50068 !important;
+    background-color: #d50068 !important;
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Navigation */
+.hdr .nav a,
+.hdr .nav a:visited,
+.hdr .nav a:hover,
+.hdr .nav a.active {
+    color: #fff !important;
+}
+
+/* Active underline */
+.hdr .nav a.active,
+.hdr .nav a[aria-current="page"] {
+    border-color: #fff !important;
+}
+
+/* Contact button */
+.hdr .btn {
+    background: #fff !important;
+    color: #1f2937 !important;
+    border-color: #fff !important;
+}
