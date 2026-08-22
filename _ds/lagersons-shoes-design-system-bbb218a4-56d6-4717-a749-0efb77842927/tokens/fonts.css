@@ -1,6 +1,0 @@
-/* Lagersons uses Google-hosted webfonts only — no local binaries exist in the
-   source sites. Playfair Display (display/headings), Inter Tight (UI/body on the
-   live WordPress build), Poppins (body on the static rebuild), Open Sans (Astra
-   theme default body). Loaded from the Google Fonts CDN, exactly as both source
-   sites do. */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
