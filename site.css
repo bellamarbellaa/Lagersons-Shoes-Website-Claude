@@ -345,3 +345,194 @@ h5{font-size:22px!important;line-height:1.35em!important}
 .grid4,.grid3{gap:18px}
 .tcard .m,.gcard .m{padding:14px 16px 18px}
 }
+
+/* =========================================================
+   LAGERSONS PINK HEADE
+   ========================================================= */
+
+.hdr,
+.hdr-in {
+  background: #e5006d !important;
+  background-color: #e5006d !important;
+}
+
+/* Header */
+.hdr {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Header layout */
+.hdr-in {
+  max-width: 1240px;
+  min-height: 96px;
+  margin: 0 auto;
+  padding: 12px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Logo */
+.hdr-in > a:first-child {
+  background: transparent !important;
+}
+
+.hdr-in > a:first-child img {
+  width: 150px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent !important;
+}
+
+/* Navigation text */
+.nav a,
+.nav a:link,
+.nav a:visited {
+  background: transparent !important;
+  color: #ffffff !important;
+
+  text-decoration: none;
+  border: 0 !important;
+  box-shadow: none !important;
+
+  padding: 8px 0;
+}
+
+/* Hover */
+.nav a:hover,
+.nav a:focus {
+  background: transparent !important;
+  color: #ffe1ef !important;
+}
+
+/* Active page */
+.nav a.on,
+.nav a.active,
+.nav a:active {
+  background: transparent !important;
+  color: #ffffff !important;
+
+  border-bottom: 2px solid #ffffff !important;
+}
+
+/* Remove any pseudo-element pink/white blocks */
+.nav a::before,
+.nav a::after {
+  background: transparent !important;
+}
+
+/* Hubungi Kami button */
+.hdr .btn,
+.hdr .hdr-btn,
+.hdr-in .btn,
+.hdr-in .hdr-btn {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+
+  color: #17213A !important;
+
+  border: 1px solid #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Button hover */
+.hdr .btn:hover,
+.hdr .hdr-btn:hover,
+.hdr-in .btn:hover,
+.hdr-in .hdr-btn:hover {
+  background: #ffe1ef !important;
+  color: #17213A !important;
+  border-color: #ffe1ef !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hdr,
+  .hdr-in {
+    background: #e5006d !important;
+    background-color: #e5006d !important;
+  }
+
+  .hdr-in {
+    min-height: 76px;
+    padding: 10px 18px;
+  }
+
+  .hdr-in > a:first-child img {
+    width: 125px;
+    height: 58px;
+  }
+
+  /* Mobile menu */
+  .nav {
+    background: #e5006d !important;
+    background-color: #e5006d !important;
+  }
+
+  .nav a,
+  .nav a:link,
+  .nav a:visited {
+    background: transparent !important;
+    color: #ffffff !important;
+  }
+
+  .nav a:hover,
+  .nav a:focus,
+  .nav a.on,
+  .nav a.active {
+    background: transparent !important;
+    color: #ffffff !important;
+  }
+
+  /* Mobile contact button */
+  .hdr .btn,
+  .hdr .hdr-btn,
+  .hdr-in .btn,
+  .hdr-in .hdr-btn {
+    background: #ffffff !important;
+    color: #17213A !important;
+    border-color: #ffffff !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .hdr-in {
+    padding: 8px 14px;
+  }
+
+  .hdr-in > a:first-child img {
+    width: 110px;
+    height: 52px;
+  }
+}
