@@ -173,3 +173,35 @@ h5{font-size:22px!important;line-height:1.35em!important}
 .grid4,.grid3{gap:18px}
 .tcard .m,.gcard .m{padding:14px 16px 18px}
 }
+
+
+/* Lagersons header - GitHub Pages override */
+.hdr {
+  background: #D40171 !important;
+  color: #fff !important;
+}
+
+.hdr .nav a {
+  color: #fff !important;
+}
+
+.hdr .nav a:hover,
+.hdr .nav a:focus-visible,
+.hdr .nav a.active,
+.hdr .nav a.on {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.hdr .btn-sm {
+  background-color: #FCEEF5 !important;
+  border-color: #FCEEF5 !important;
+  color: #17203A !important;
+}
+
+.hdr .btn-sm:hover,
+.hdr .btn-sm:active {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: #17203A !important;
+}
