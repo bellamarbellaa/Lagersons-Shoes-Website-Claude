@@ -1,13 +1,3 @@
-# Lagersons Shoes — situs statis
-
-Isi folder ini siap diunggah apa adanya ke GitHub Pages.
-
-## Cara publikasi
-1. Buat repo baru di GitHub (mis. `lagersons-shoes`).
-2. Unggah **semua isi folder ini** ke root repo (bukan foldernya, tapi isinya).
-3. Settings -> Pages -> Source: `Deploy from a branch`, Branch: `main` / `(root)`.
-4. Situs tayang di `https://<username>.github.io/<repo>/`.
-
 ## Struktur
 - `index.html` Beranda, `koleksi.html`, `about.html` Tentang Kami, `contact.html` Kontak
 - `site.css` satu stylesheet untuk keempat halaman (token desain sudah digabung di dalamnya)
