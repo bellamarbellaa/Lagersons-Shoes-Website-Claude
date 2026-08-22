@@ -1,19 +1,199 @@
+/* ds:tokens/fonts.css */
+/* Lagersons uses Google-hosted webfonts only — no local binaries exist in the
+   source sites. Playfair Display (display/headings), Inter Tight (UI/body on the
+   live WordPress build), Poppins (body on the static rebuild), Open Sans (Astra
+   theme default body). Loaded from the Google Fonts CDN, exactly as both source
+   sites do. */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+/* ds:tokens/colors.css */
+:root{
+  /* --- Brand pinks. Values 500/600 are the live site's Astra global colors 0/1;
+         700 is sampled from the supplied logo lockup; 800 is the deep pink used
+         for headings in the static rebuild. --- */
+  --lg-pink-50:#FFF6FA;
+  --lg-pink-100:#FCEEF5;
+  --lg-pink-200:#FAD8E9;
+  --lg-pink-300:#F6C9DD;
+  --lg-pink-400:#FFE1EE;
+  --lg-pink-500:#FB5FAB;
+  --lg-pink-600:#EA559D;
+  --lg-pink-650:#EC1E79;
+  --lg-pink-700:#D30071;
+  --lg-pink-800:#C2185B;
+
+  /* --- Ink / neutrals --- */
+  --lg-ink-900:#0F172A;
+  --lg-ink-700:#2C2530;
+  --lg-ink-600:#454F5E;
+  --lg-ink-500:#6B6470;
+  --lg-ink-black:#140610;
+  --lg-gray-900:#222222;
+  --lg-gray-500:#DDDDDD;
+  --lg-white:#FFFFFF;
+
+  /* --- Accents --- */
+  --lg-gold:#B8935A;
+  --lg-olive-label:rgba(83,105,65,0.70);
+  --lg-whatsapp:#25D366;
+
+  /* --- Dark footer scale --- */
+  --lg-footer-bg:#201A22;
+  --lg-footer-fg:#CFC4D1;
+  --lg-footer-muted:#9D92A0;
+  --lg-footer-dim:#8A7F8D;
+
+  /* --- Semantic aliases --- */
+  --lg-brand:var(--lg-pink-700);
+  --lg-brand-action:var(--lg-pink-500);
+  --lg-brand-action-hover:var(--lg-pink-600);
+  --lg-text-heading:var(--lg-pink-800);
+  --lg-text-body:var(--lg-ink-500);
+  --lg-text-strong:var(--lg-ink-700);
+  --lg-text-onbrand:var(--lg-white);
+  --lg-text-label:var(--lg-gold);
+  --lg-surface:var(--lg-white);
+  --lg-surface-soft:var(--lg-pink-50);
+  --lg-surface-tint:var(--lg-pink-100);
+  --lg-surface-card:var(--lg-white);
+  --lg-border:var(--lg-pink-300);
+  --lg-border-strong:var(--lg-pink-800);
+  --lg-hero-wash:radial-gradient(circle at 80% 0%, var(--lg-pink-400) 0%, var(--lg-pink-50) 55%, #ffffff 100%);
+  --lg-brand-gradient:linear-gradient(135deg, var(--lg-pink-650), var(--lg-pink-800));
+  --lg-link:var(--lg-pink-650);
+  --lg-link-hover:var(--lg-pink-800);
+}
+
+/* ds:tokens/typography.css */
+:root{
+  --lg-font-display:"Playfair Display", Georgia, serif;
+  --lg-font-ui:"Inter Tight", "Poppins", "Segoe UI", sans-serif;
+  --lg-font-body:"Poppins", "Segoe UI", sans-serif;
+  --lg-font-theme:"Open Sans", sans-serif;
+
+  /* Heading scale — desktop values taken verbatim from the live site */
+  --lg-size-h1:52px;
+  --lg-size-h2:44px;
+  --lg-size-h3:30px;
+  --lg-size-h4:20px;
+  --lg-size-h5:20px;
+  --lg-size-h6:15px;
+  --lg-size-hero:58px;
+  --lg-size-section:40px;
+  --lg-size-guest-name:22px;
+  --lg-size-body-lg:20px;
+  --lg-size-body:16px;
+  --lg-size-body-sm:18px;
+  --lg-size-label:12px;
+  --lg-size-btn:14px;
+  --lg-size-btn-elementor:18px;
+
+  --lg-lh-heading:1.3em;
+  --lg-lh-heading-tight:1.2em;
+  --lg-lh-body:1.7em;
+  --lg-lh-body-static:1.65; /* @kind other */
+
+  --lg-weight-body:400;
+  --lg-weight-medium:500;
+  --lg-weight-semibold:600;
+  --lg-weight-bold:700;
+
+  --lg-track-hero:-3px;
+  --lg-track-section:-2px;
+  --lg-track-label:0.14em;
+  --lg-track-logo-sub:0.4em;
+}
+
+/* ds:tokens/spacing.css */
+:root{
+  --lg-space-1:4px;
+  --lg-space-2:6px;
+  --lg-space-3:10px;
+  --lg-space-4:14px;
+  --lg-space-5:16px;
+  --lg-space-6:20px;
+  --lg-space-7:24px;
+  --lg-space-8:28px;
+  --lg-space-9:32px;
+  --lg-space-10:40px;
+  --lg-space-12:48px;
+  --lg-space-14:56px;
+  --lg-space-16:70px;
+  --lg-space-20:84px;
+
+  --lg-container:1180px;
+  --lg-container-wp:1200px;
+  --lg-container-narrow:750px;
+  --lg-gutter:24px;
+
+  --lg-section-y:84px;
+  --lg-section-y-tight:56px;
+  --lg-section-y-wp:70px;
+  --lg-grid-gap:28px;
+  --lg-feature-gap:56px;
+
+  --lg-btn-pad:14px 30px;
+  --lg-btn-pad-sm:10px 20px;
+  --lg-btn-pad-wp:17px 40px;
+  --lg-card-pad:32px 26px;
+}
+
+/* ds:tokens/radii.css */
+:root{
+  --lg-radius-img:2px;       /* Elementor image radius on the live site */
+  --lg-radius-btn-wp:4px;    /* Astra theme buttons */
+  --lg-radius-sm:10px;
+  --lg-radius:18px;          /* cards */
+  --lg-radius-lg:24px;       /* hero media */
+  --lg-radius-xl:28px;       /* CTA band */
+  --lg-radius-pill:999px;    /* buttons, tags, social pills */
+  --lg-radius-round:50%;     /* avatars, icon circles */
+}
+
+/* ds:tokens/shadows.css */
+:root{
+  --lg-shadow:0 10px 30px rgba(214,30,120,0.12);
+  --lg-shadow-hover:0 14px 34px rgba(214,30,120,0.2);
+  --lg-shadow-subtle:0 6px 18px rgba(0,0,0,0.04);
+  --lg-shadow-whatsapp:0 10px 24px rgba(37,211,102,0.4);
+  --lg-shadow-whatsapp-hover:0 12px 26px rgba(37,211,102,0.3);
+  /* Signature offset shadow on the live site's Special Guests frames */
+  --lg-shadow-frame:-3px -3px 5px 0 rgba(0,0,0,0.5);
+  --lg-border-frame:2px solid var(--lg-pink-800);
+}
+
+/* ds:tokens/motion.css */
+:root{
+  --lg-ease:ease; /* @kind other */
+  --lg-dur-fast:0.15s; /* @kind other */
+  --lg-dur:0.2s; /* @kind other */
+  --lg-dur-slow:0.25s; /* @kind other */
+  --lg-lift:translateY(-4px); /* @kind other */
+  --lg-lift-sm:translateY(-2px); /* @kind other */
+  --lg-lift-lg:translateY(-5px); /* @kind other */
+  --lg-pop:scale(1.08); /* @kind other */
+  --lg-transition-btn:transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, color 0.2s ease; /* @kind other */
+  --lg-transition-card:transform 0.2s ease, box-shadow 0.2s ease; /* @kind other */
+}
+
+/* Lagersons Shoes — design system entry point. Import lists only. */
+
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:#fff;color:#454F5E;font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.7em;-webkit-font-smoothing:antialiased}
 img{max-width:100%}
 a{color:#FB5FAB}a:hover{color:#EA559D}
 .wrap{max-width:1200px;margin:0 auto}
-.hdr{position:sticky;top:0;padding-top:env(safe-area-inset-top,0px);z-index:100;background:#fff!important;background-color:#fff!important;opacity:1!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:0 1px 0 rgba(15,23,42,.08)}
-.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1240px;margin:0 auto;padding:12px 20px;background-color:#fff!important}
+.hdr{position:sticky;top:0;padding-top:env(safe-area-inset-top,0px);z-index:100;background:var(--hdr-bg,var(--lg-pink-700));box-shadow:0 1px 0 rgba(15,23,42,.08)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1240px;margin:0 auto;padding:12px 20px;background-color:var(--hdr-bg,var(--lg-pink-700))}
 .hdr-in>a:first-child img{width:150px;height:72px;object-fit:cover;object-position:center;display:block}
 .hdr .btn-sm{background-color:var(--lg-pink-400);border-color:var(--lg-pink-400);font-weight:700}
 .hdr .btn-sm:hover,.hdr .btn-sm:active{background-color:#FFE1EE;border-color:#FFE1EE;color:#0F172A}
 .hdr-in>a:first-child{display:flex;align-items:center;text-decoration:none}
 .nav{display:flex;align-items:center;gap:36px;list-style:none;margin:0;padding:0}
-.nav a{font-size:16px;text-decoration:none;color:#454F5E!important;padding-bottom:4px;border-bottom:2px solid transparent;transition:color .2s ease,border-color .2s ease}
+.nav a{font-size:16px;text-decoration:none;color:var(--lg-pink-50);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .2s ease,border-color .2s ease}
 .nav .sm{display:none}
-.nav a:hover,.nav a:focus-visible,.nav a:active{color:#17203A!important;border-color:#D50068}
-.nav a.on{color:#17203A!important;font-weight:600;border-color:#17203A}
+.nav a:hover,.nav a:focus-visible,.nav a:active{color:#FFE1EE;border-color:#FFE1EE}
+.nav a.on{color:var(--lg-pink-50);font-weight:600;border-color:var(--lg-pink-50)}
 .btn{display:inline-block;font-family:'Open Sans',sans-serif;font-size:18px;line-height:1em;text-decoration:none;color:#0F172A;background:#FB5FAB;border:1px solid #FB5FAB;border-radius:4px;padding:17px 40px;cursor:pointer;transition:background .2s ease,transform .2s ease}
 .btn:hover{background:#EA559D;border-color:#EA559D;color:#0F172A;transform:translateY(-2px)}
 .btn-sm{font-size:14px;padding:14px 28px}
@@ -44,7 +224,7 @@ h2.sh{font-size:44px;line-height:1.3em;text-align:center;margin:0 0 20px}
 .pcard h4{font-size:22px;line-height:1.25em;margin:14px 0 4px}
 .pcard p{font-size:15px;color:#6B6470;margin:0}
 .phero{position:relative;isolation:isolate;overflow:hidden;padding:110px 20px;text-align:center}
-.phero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("uploads/@lagersonsshoes-Email-Header.png") center/cover no-repeat;opacity:var(--hero-img-opacity,.7)}
+.phero::before{content:"";position:absolute;inset:0;z-index:-2;background:none center/cover no-repeat;opacity:var(--hero-img-opacity,.7)}
 .phero::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(0,0,0,var(--hero-scrim,.5))}
 .phero>*{position:relative;z-index:1;opacity:1}
 .phero .eyebrow{color:#F6C9DD}
@@ -145,14 +325,14 @@ h5{font-size:22px!important;line-height:1.35em!important}
 @media(max-width:760px){
 .hdr-in{position:relative;flex-wrap:nowrap;justify-content:space-between;gap:10px;padding:8px 14px}
 .hdr-in>a:first-child img{width:116px;height:58px}
-.navtoggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:46px;height:46px;font-size:22px;line-height:1;color:#17203A!important;background:#fff!important;border:1.5px solid #17203A;border-radius:8px;cursor:pointer;transition:background .2s ease,color .2s ease}
+.navtoggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:46px;height:46px;font-size:22px;line-height:1;color:var(--lg-pink-50);background:transparent;border:1.5px solid var(--lg-pink-50);border-radius:8px;cursor:pointer;transition:background .2s ease,color .2s ease}
 .navtoggle:hover,.navtoggle[aria-expanded="true"]{background:#FFE1EE;border-color:#FFE1EE;color:var(--lg-pink-700)}
 .hdr nav{display:none}
-.hdr nav.open{display:block;position:absolute;top:100%;right:0;left:0;background:#fff!important;background-color:#fff!important;opacity:1!important;box-shadow:0 12px 26px rgba(15,23,42,.22);padding:4px 14px 10px;z-index:120}
+.hdr nav.open{display:block;position:absolute;top:100%;right:0;left:0;background:var(--hdr-bg,var(--lg-pink-700));box-shadow:0 12px 26px rgba(15,23,42,.22);padding:4px 14px 10px;z-index:120}
 .hdr nav.open .nav{flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:0;white-space:normal}
 .hdr nav.open .nav li+li a{border-top:1px solid rgba(255,255,255,.18)}
 .hdr nav.open .nav a{display:block;font-size:16px;padding:15px 12px;border-bottom:0;text-align:right;border-radius:6px;transition:background .18s ease,color .18s ease}
-.hdr nav.open .nav a:hover,.hdr nav.open .nav a:focus-visible,.hdr nav.open .nav a:active{background:#FCEEF5;color:#17203A}
+.hdr nav.open .nav a:hover,.hdr nav.open .nav a:focus-visible,.hdr nav.open .nav a:active{background:#FFE1EE;color:var(--lg-pink-700)}
 .hdr nav.open .nav a.on{font-weight:700;color:#fff}
 .hdr nav.open .nav .lg{display:inline}
 .hdr nav.open .nav .sm{display:none}
@@ -164,306 +344,4 @@ h5{font-size:22px!important;line-height:1.35em!important}
 .gslot,.tslot{aspect-ratio:4/5}
 .grid4,.grid3{gap:18px}
 .tcard .m,.gcard .m{padding:14px 16px 18px}
-}
-
-
-/* =========================================================
-   FINAL HEADER — WHITE, OPAQUE, ALL PAGES
-   ========================================================= */
-
-.hdr,
-.hdr-in,
-.hdr nav.open {
-  background:#fff !important;
-  background-color:#fff !important;
-  opacity:1 !important;
-  backdrop-filter:none !important;
-  -webkit-backdrop-filter:none !important;
-}
-
-.hdr .nav a,
-.hdr .nav a:visited {
-  color:#454F5E !important;
-  background:transparent !important;
-}
-
-.hdr .nav a:hover,
-.hdr .nav a:focus-visible {
-  color:#17203A !important;
-  border-color:#D50068 !important;
-}
-
-.hdr .nav a.on,
-.hdr .nav a[aria-current="page"] {
-  color:#17203A !important;
-  border-color:#17203A !important;
-}
-
-.hdr .btn-sm {
-  background:#fff !important;
-  color:#17203A !important;
-  border-color:#17203A !important;
-}
-
-@media(max-width:760px){
-  .hdr,
-  .hdr-in,
-  .hdr nav.open {
-    background:#fff !important;
-    background-color:#fff !important;
-    opacity:1 !important;
-    backdrop-filter:none !important;
-    -webkit-backdrop-filter:none !important;
-  }
-
-  .navtoggle {
-    color:#17203A !important;
-    background:#fff !important;
-    border-color:#17203A !important;
-  }
-
-  .hdr nav.open .nav a {
-    color:#454F5E !important;
-    background:#fff !important;
-  }
-
-  .hdr nav.open .nav a.on {
-    color:#17203A !important;
-  }
-}
-
-
-/* =========================================================
-   FINAL NAV TOGGLE FIX — HAMBURGER MOBILE ONLY
-   ========================================================= */
-
-/* Never show the hamburger on desktop/tablet */
-.hdr .navtoggle {
-  display:none !important;
-}
-
-/* Show hamburger only on phone-sized screens */
-@media (max-width:760px) {
-  .hdr .navtoggle {
-    display:inline-flex !important;
-    align-items:center;
-    justify-content:center;
-  }
-}
-
-
-/* =========================================================
-   ABSOLUTE FINAL HEADER OVERRIDE
-   Header + navigation/dropdown = WHITE on every page.
-   Hamburger = MOBILE ONLY.
-   ========================================================= */
-
-/* Desktop + tablet */
-header.hdr,
-.hdr,
-.hdr-in,
-.hdr > .hdr-in,
-.hdr nav,
-.hdr nav.open {
-  background: #fff !important;
-  background-color: #fff !important;
-  background-image: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-/* Desktop/tablet: normal navigation, no hamburger */
-@media (min-width: 761px) {
-  .hdr .navtoggle {
-    display: none !important;
-  }
-
-  .hdr nav {
-    display: block !important;
-    position: static !important;
-    background: #fff !important;
-    background-color: #fff !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-
-  .hdr .nav {
-    display: flex !important;
-    flex-direction: row !important;
-    background: #fff !important;
-  }
-
-  .hdr .nav a,
-  .hdr .nav a:visited {
-    color: #454F5E !important;
-    background: transparent !important;
-  }
-
-  .hdr .nav a.on,
-  .hdr .nav a[aria-current="page"] {
-    color: #17203A !important;
-    border-color: #17203A !important;
-  }
-}
-
-/* Phone: white header + white dropdown */
-@media (max-width: 760px) {
-  .hdr .navtoggle {
-    display: inline-flex !important;
-    color: #17203A !important;
-    background: #fff !important;
-    background-color: #fff !important;
-    border-color: #17203A !important;
-  }
-
-  .hdr nav {
-    background: #fff !important;
-    background-color: #fff !important;
-  }
-
-  .hdr nav.open {
-    background: #fff !important;
-    background-color: #fff !important;
-    box-shadow: 0 12px 26px rgba(15,23,42,.12) !important;
-  }
-
-  .hdr nav.open .nav,
-  .hdr nav.open .nav li,
-  .hdr nav.open .nav a {
-    background: #fff !important;
-    background-color: #fff !important;
-  }
-
-  .hdr nav.open .nav a,
-  .hdr nav.open .nav a:visited {
-    color: #454F5E !important;
-  }
-
-  .hdr nav.open .nav a.on,
-  .hdr nav.open .nav a[aria-current="page"] {
-    color: #17203A !important;
-    font-weight: 700 !important;
-  }
-}
-
-/* The contact button remains a deliberate pink accent, not a pink header. */
-.hdr .btn-sm {
-  background: #fff !important;
-  background-color: #fff !important;
-  color: #17203A !important;
-  border: 1.5px solid #17203A !important;
-}
-
-.hdr .btn-sm:hover,
-.hdr .btn-sm:active {
-  background: #FCEEF5 !important;
-  color: #17203A !important;
-  border-color: #D50068 !important;
-}
-
-
-/* =========================================================
-   FINAL: PINK HEADER — ALL PAGES
-   Hamburger = MOBILE ONLY
-   ========================================================= */
-
-.hdr,
-.hdr-in,
-.hdr nav,
-.hdr nav.open {
-  background: #D50068 !important;
-  background-color: #D50068 !important;
-  background-image: none !important;
-  opacity: 1 !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-/* Desktop/tablet */
-@media (min-width: 761px) {
-  .hdr .navtoggle {
-    display: none !important;
-  }
-
-  .hdr nav {
-    display: block !important;
-    position: static !important;
-    background: #D50068 !important;
-    background-color: #D50068 !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-
-  .hdr .nav {
-    display: flex !important;
-    flex-direction: row !important;
-    background: #D50068 !important;
-  }
-
-  .hdr .nav a,
-  .hdr .nav a:visited {
-    color: #fff !important;
-    background: transparent !important;
-  }
-
-  .hdr .nav a:hover,
-  .hdr .nav a:focus-visible {
-    color: #fff !important;
-    border-color: #fff !important;
-  }
-
-  .hdr .nav a.on,
-  .hdr .nav a[aria-current="page"] {
-    color: #fff !important;
-    border-color: #fff !important;
-  }
-
-  .hdr .btn-sm {
-    background: #FFE1EE !important;
-    color: #17203A !important;
-    border-color: #FFE1EE !important;
-  }
-}
-
-/* Mobile */
-@media (max-width: 760px) {
-  .hdr .navtoggle {
-    display: inline-flex !important;
-    color: #fff !important;
-    background: #D50068 !important;
-    border-color: #fff !important;
-  }
-
-  .hdr nav,
-  .hdr nav.open {
-    background: #D50068 !important;
-    background-color: #D50068 !important;
-  }
-
-  .hdr nav.open .nav,
-  .hdr nav.open .nav li,
-  .hdr nav.open .nav a {
-    background: #D50068 !important;
-    background-color: #D50068 !important;
-  }
-
-  .hdr nav.open .nav a,
-  .hdr nav.open .nav a:visited {
-    color: #fff !important;
-  }
-
-  .hdr nav.open .nav a.on,
-  .hdr nav.open .nav a[aria-current="page"] {
-    color: #fff !important;
-    font-weight: 700 !important;
-    border-color: #fff !important;
-  }
-
-  .hdr .btn-sm {
-    background: #FFE1EE !important;
-    color: #17203A !important;
-    border-color: #FFE1EE !important;
-  }
 }
