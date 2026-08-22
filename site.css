@@ -1,10 +1,10 @@
-
 :root{
   --lg-pink-50:#FCEEF5;
   --lg-pink-400:#FB5FAB;
   --lg-pink-700:#D40171;
   --hdr-bg:#FFFFFF;
 }
+
 
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:#fff;color:#454F5E;font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.7em;-webkit-font-smoothing:antialiased}
@@ -175,80 +175,122 @@ h5{font-size:22px!important;line-height:1.35em!important}
 }
 
 
-/* =========================================
-   LAGERSONS HEADER — GITHUB PAGES
-   White header, pink logo only
-   ========================================= */
+/* =========================================================
+   LAGERSONS HEADER — FINAL GITHUB PAGES OVERRIDE
+   White header; only the Lagersons logo remains pink.
+   Uses the actual .hdr-in structure in the HTML.
+   ========================================================= */
 
-.hdr{
-  background:#fff !important;
+.hdr,
+.hdr-in{
+  background:#FFFFFF !important;
   color:#17203A !important;
 }
 
-/* Keep the logo area pink */
-.hdr .wrap > a:first-child{
-  background:#D40171 !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  width:150px !important;
-  height:72px !important;
-  padding:0 !important;
+/* Logo */
+.hdr-in > a:first-child{
+  background:transparent !important;
 }
 
-.hdr .wrap > a:first-child img{
-  width:150px !important;
-  height:72px !important;
-  object-fit:contain !important;
+.hdr-in > a:first-child img{
   display:block !important;
+  width:150px !important;
+  height:72px !important;
+  object-fit:cover !important;
 }
 
-/* Navigation */
-.hdr .nav a{
+/* Desktop navigation */
+.hdr-in .nav a{
   color:#454F5E !important;
   background:transparent !important;
   border-bottom:2px solid transparent !important;
 }
 
-.hdr .nav a:hover,
-.hdr .nav a:focus-visible{
+.hdr-in .nav a:hover,
+.hdr-in .nav a:focus-visible,
+.hdr-in .nav a:active{
   color:#17203A !important;
   background:transparent !important;
   border-bottom-color:#D40171 !important;
 }
 
-/* Active navigation item */
-.hdr .nav a.active,
-.hdr .nav a.on,
-.hdr .nav a[aria-current="page"]{
+.hdr-in .nav a.on{
   color:#17203A !important;
+  font-weight:600 !important;
   background:transparent !important;
   border-bottom-color:#17203A !important;
 }
 
-/* Contact button */
-.hdr .btn-sm{
-  background:#fff !important;
+/* Desktop contact button */
+.hdr-in .btn-sm{
+  display:inline-block !important;
+  background:#FFFFFF !important;
   color:#17203A !important;
   border:1px solid #17203A !important;
 }
 
-.hdr .btn-sm:hover,
-.hdr .btn-sm:focus-visible{
+.hdr-in .btn-sm:hover,
+.hdr-in .btn-sm:focus-visible,
+.hdr-in .btn-sm:active{
   background:#FCEEF5 !important;
   color:#17203A !important;
   border-color:#D40171 !important;
 }
 
-/* Mobile header */
-@media (max-width:760px){
-  .hdr .wrap > a:first-child{
-    width:120px !important;
+/* Mobile menu button */
+@media(max-width:760px){
+
+  .hdr,
+  .hdr-in{
+    background:#FFFFFF !important;
+  }
+
+  .hdr-in > a:first-child img{
+    width:116px !important;
     height:58px !important;
   }
 
-  .hdr .wrap > a:first-child img{
-    width:120px !important;
-    height:58px !important;
+  .navtoggle{
+    color:#17203A !important;
+    background:#FFFFFF !important;
+    border-color:#17203A !important;
+  }
+
+  .navtoggle:hover,
+  .navtoggle[aria-expanded="true"]{
+    background:#FCEEF5 !important;
+    border-color:#D40171 !important;
+    color:#17203A !important;
+  }
+
+  /* Open mobile menu is also white */
+  .hdr nav.open{
+    background:#FFFFFF !important;
+    color:#17203A !important;
+  }
+
+  .hdr nav.open .nav a{
+    color:#454F5E !important;
+    background:#FFFFFF !important;
+    border-color:#E7E7E7 !important;
+  }
+
+  .hdr nav.open .nav a:hover,
+  .hdr nav.open .nav a:focus-visible,
+  .hdr nav.open .nav a:active{
+    background:#FCEEF5 !important;
+    color:#17203A !important;
+  }
+
+  .hdr nav.open .nav a.on{
+    color:#17203A !important;
+    font-weight:700 !important;
+  }
+}
+
+@media(max-width:420px){
+  .hdr-in > a:first-child img{
+    width:104px !important;
+    height:52px !important;
   }
 }
