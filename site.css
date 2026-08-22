@@ -294,3 +294,63 @@ h5{font-size:22px!important;line-height:1.35em!important}
     height:52px !important;
   }
 }
+
+
+/* =========================================
+   LAGERSONS — PINK HEADER ALL PAGES
+   ========================================= */
+
+.hdr {
+    background: var(--lg-pink-700, #d50068) !important;
+    color: #ffffff !important;
+}
+
+/* Logo area */
+.hdr-in > a:first-child {
+    background: transparent !important;
+}
+
+/* Logo image */
+.hdr-in > a:first-child img {
+    background: transparent !important;
+}
+
+/* Navigation */
+.nav a,
+.nav a:visited {
+    color: #ffffff !important;
+}
+
+.nav a:hover,
+.nav a.active,
+.nav a[aria-current="page"] {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+/* Contact button */
+.hdr .btn {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border-color: #ffffff !important;
+}
+
+.hdr .btn:hover {
+    background: #ffe6f1 !important;
+    border-color: #ffe6f1 !important;
+}
+
+/* Mobile menu if applicable */
+@media (max-width: 768px) {
+    .hdr {
+        background: #d50068 !important;
+    }
+
+    .nav {
+        background: #d50068 !important;
+    }
+
+    .nav a {
+        color: #ffffff !important;
+    }
+}
