@@ -1,4 +1,11 @@
-@import "_ds/lagersons-shoes-design-system-bbb218a4-56d6-4717-a749-0efb77842927/styles.css";
+:root{
+  --lg-pink-50:#FCEEF5;
+  --lg-pink-400:#FB5FAB;
+  --lg-pink-700:#D40171;
+  --hdr-bg:#D40171;
+}
+
+
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:#fff;color:#454F5E;font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.7em;-webkit-font-smoothing:antialiased}
 img{max-width:100%}
