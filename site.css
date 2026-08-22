@@ -175,11 +175,8 @@ h5{font-size:22px!important;line-height:1.35em!important}
 }
 
 
-/* =========================================================
-   LAGERSONS HEADER — FINAL GITHUB PAGES OVERRIDE
-   White header; only the Lagersons logo remains pink.
-   Uses the actual .hdr-in structure in the HTML.
-   ========================================================= */
+/* LAGERSONS HEADER — FINAL GITHUB PAGES OVERRIDE
+   White header; only the Lagersons logo remains pink. */
 
 .hdr,
 .hdr-in{
@@ -296,36 +293,34 @@ h5{font-size:22px!important;line-height:1.35em!important}
 }
 
 
-/* =========================================
-   LAGERSONS — PINK HEADER ALL PAGES
-   ========================================= */
-
+/* LAGERSONS PINK HEADER */
 .hdr {
-    background: var(--lg-pink-700, #d50068) !important;
+    background: #d50068 !important;
+    background-color: #d50068 !important;
     color: #ffffff !important;
 }
 
-/* Logo area */
-.hdr-in > a:first-child {
-    background: transparent !important;
+.hdr-in {
+    background: #d50068 !important;
 }
 
-/* Logo image */
-.hdr-in > a:first-child img {
-    background: transparent !important;
-}
-
-/* Navigation */
-.nav a,
-.nav a:visited {
+/* Navigation text */
+.hdr .nav a,
+.hdr .nav a:visited {
     color: #ffffff !important;
 }
 
-.nav a:hover,
-.nav a.active,
-.nav a[aria-current="page"] {
+/* Active navigation */
+.hdr .nav a.active,
+.hdr .nav a[aria-current="page"],
+.hdr .nav a:hover {
     color: #ffffff !important;
     border-color: #ffffff !important;
+}
+
+/* Logo — remove the pink rectangle around it */
+.hdr-in > a:first-child {
+    background: transparent !important;
 }
 
 /* Contact button */
@@ -337,20 +332,21 @@ h5{font-size:22px!important;line-height:1.35em!important}
 
 .hdr .btn:hover {
     background: #ffe6f1 !important;
-    border-color: #ffe6f1 !important;
+    color: #1f2937 !important;
 }
 
-/* Mobile menu if applicable */
+/* Keep pink header on mobile */
 @media (max-width: 768px) {
-    .hdr {
+    .hdr,
+    .hdr-in {
         background: #d50068 !important;
     }
 
-    .nav {
+    .hdr .nav {
         background: #d50068 !important;
     }
 
-    .nav a {
+    .hdr .nav a {
         color: #ffffff !important;
     }
 }
