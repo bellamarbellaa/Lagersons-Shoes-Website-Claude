@@ -3,17 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contact — Lagersons Shoes</title>
+<title>Kontak &amp; Konsultasi Sepatu Custom | Lagersons Shoes</title>
 <meta name="description" content="Hubungi Lagersons Shoes lewat formulir, WhatsApp 0857-1472-2598 atau 0813-1678-0269, atau kunjungi toko kami di Tangerang dan Jakarta Selatan.">
-<meta property="og:title" content="Contact — Lagersons Shoes">
+<meta property="og:title" content="Kontak &amp; Konsultasi Sepatu Custom | Lagersons Shoes">
 <meta property="og:description" content="Formulir kontak, dua nomor WhatsApp, dan alamat dua toko offline Lagersons Shoes.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/product-white-heels.jpg">
+<meta property="og:image" content="https://lagersons-website.vercel.app/img/lagersonsshoes-email-header.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>👠</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="site.css">
 <style>.form{display:grid;gap:20px}.form .row{display:grid;grid-template-columns:1fr 1fr;gap:20px}.form button{border:none}.hint{font-size:14px;color:#6B6470;margin:0}.wacard{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #FAD8E9;border-radius:6px;padding:24px}.wacard strong{font-size:18px;color:#0F172A}@media(max-width:900px){.form .row{grid-template-columns:1fr}}</style>
+
+<link rel="canonical" href="https://lagersons-website.vercel.app/contact.html">
+<meta property="og:url" content="https://lagersons-website.vercel.app/contact.html">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://lagersons-website.vercel.app/#organization", "name": "Lagersons Shoes", "url": "https://lagersons-website.vercel.app/", "logo": "https://lagersons-website.vercel.app/img/logo-badge-sm.png", "sameAs": ["https://www.instagram.com/lagersonsshoes/", "https://shopee.co.id/lagersonsshoes"], "contactPoint": [{"@type": "ContactPoint", "telephone": "+62-857-1472-2598", "contactType": "customer service", "availableLanguage": "Indonesian"}]}</script>
 </head>
 <body>
 <header class="hdr">
@@ -41,13 +47,15 @@
 <div class="wrap grid2" style="gap:50px;align-items:start">
 <div id="form">
 <h2 style="font-size:34px;line-height:1.25em;margin:0 0 10px">Kirim Pesan</h2>
-<p class="hint" style="margin-bottom:28px">Lengkapi formulir ini dan pesan Anda akan kami terima lewat WhatsApp — biasanya dibalas di jam operasional toko.</p>
+<p class="hint" style="margin-bottom:28px">Isi formulir untuk menyimpan pertanyaan Anda agar dapat kami tindak lanjuti. Setelah tersimpan, Anda bisa melanjutkan chat di WhatsApp.</p>
 <form class="form" id="contactForm">
+<input type="hidden" name="lead_id"><input type="hidden" name="source_page"><input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign">
+<div hidden aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
 <div class="row">
-<div><label for="nama">Nama</label><input id="nama" name="nama" type="text" placeholder="Nama lengkap Anda" required></div>
-<div><label for="telepon">Nomor WhatsApp / Telepon</label><input id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx" required></div>
+<div><label for="nama">Nama</label><input autocomplete="name" id="nama" name="nama" type="text" placeholder="Nama lengkap Anda" required></div>
+<div><label for="telepon">Nomor WhatsApp / Telepon</label><input autocomplete="tel" id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx" pattern="[0-9+ ()-]{8,22}" required></div>
 </div>
-<div><label for="email">Email <span style="font-weight:400;color:#6B6470">(opsional)</span></label><input id="email" name="email" type="email" placeholder="nama@email.com"></div>
+<div><label for="email">Email <span style="font-weight:400;color:#6B6470">(opsional)</span></label><input autocomplete="email" id="email" name="email" type="email" placeholder="nama@email.com"></div>
 <div><label for="topik">Kebutuhan Anda</label><select id="topik" name="topik">
 <option>Tanya ketersediaan model</option>
 <option>Custom order</option>
@@ -55,12 +63,14 @@
 <option>Pesanan grup / komunitas</option>
 <option>Lainnya</option>
 </select></div>
-<div><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" rows="5" placeholder="Ceritakan model, warna, ukuran dan tanggal acara Anda" required></textarea></div>
+<div class="row"><div><label for="ukuran">Ukuran sepatu (opsional)</label><input id="ukuran" name="ukuran" placeholder="Contoh: 38"></div><div><label for="acara">Tanggal acara (opsional)</label><input id="acara" name="acara" type="date"></div></div>
+<div><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" maxlength="3000" rows="5" placeholder="Ceritakan model, warna, ukuran dan tanggal acara Anda" required></textarea></div>
 <div><label for="tujuan">Kirim ke</label><select id="tujuan" name="tujuan">
 <option value="6285714722598">WhatsApp CP 1</option>
 <option value="6281316780269">WhatsApp CP 2</option>
 </select></div>
-<div><button class="btn" type="submit">Kirim Pesan via WhatsApp</button></div>
+<label style="display:flex;align-items:flex-start;gap:10px;font-weight:400"><input style="width:auto;margin-top:6px" type="checkbox" name="consent" value="yes" required> Saya setuju data pertanyaan dan kontak saya disimpan oleh Lagersons Shoes untuk menindaklanjuti pertanyaan ini. Saya dapat meminta penghapusan lewat WhatsApp.</label>
+<div><button class="btn" type="submit">Simpan Pertanyaan &amp; Lanjut ke WhatsApp</button></div>
 <p class="hint" id="status" role="status"></p>
 </form>
 </div>
@@ -110,9 +120,7 @@
 </div>
 </footer>
 <a class="wa" href="https://wa.me/6285714722598?text=Halo%20Lagersons%2C%20saya%20ingin%20bertanya" aria-label="Chat WhatsApp">💬</a>
-<script>
-document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target,g=function(n){return f.elements[n].value.trim()};var txt='Halo Lagersons, saya '+g('nama')+'.\nKebutuhan: '+g('topik')+'\nPesan: '+g('pesan')+'\nKontak saya: '+g('telepon')+(g('email')?' / '+g('email'):'');window.open('https://wa.me/'+f.elements['tujuan'].value+'?text='+encodeURIComponent(txt),'_blank','noopener');document.getElementById('status').textContent='Pesan Anda dibuka di WhatsApp — tekan kirim di sana untuk menyelesaikan.';});
-</script>
+<script src="lead-capture.js"></script>
 <script src="nav.js"></script>
 </body>
 </html>
